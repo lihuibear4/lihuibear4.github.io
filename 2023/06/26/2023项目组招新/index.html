@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      Hello World | lihuibear4
+      2023项目组招新 | lihuibear4
     
   </title>
   <meta name="author" content="lihuibear4">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「Hello World」
+			「2023项目组招新」
 		
 	</p>
 
@@ -242,8 +242,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2023/06/28/hello-world/" itemprop="url">
-		Hello World
+	<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" itemprop="url">
+		2023项目组招新
 	</a>
 
 		</div>
@@ -259,9 +259,9 @@
 
 	Updated on
 
-	<a href="/2023/06/28/hello-world/" itemprop="url">
-		<time datetime="2023-06-28T07:59:12.351Z" itemprop="dateUpdated">
-	  		2023-06-28
+	<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" itemprop="url">
+		<time datetime="2023-06-26T11:46:46.000Z" itemprop="dateUpdated">
+	  		2023-06-26
 	  </time>
 	</a> 
 
@@ -269,7 +269,14 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/%E9%A1%B9%E7%9B%AE%E7%BB%84/" class=" ">
+			项目组
+		</a>
+	
+		
 			</span>
 			
 			
@@ -279,19 +286,68 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+			<h1 id="一、选择题（6×5-x3D-30分）"><a href="#一、选择题（6×5-x3D-30分）" class="headerlink" title="一、选择题（6×5&#x3D;30分）"></a>一、选择题（6×5&#x3D;30分）</h1><p><strong>1、下列程序段的时间复杂度是（ <u>B</u>）</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i *= <span class="number">2</span>) </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; i; j++) </span><br><span class="line">        sum++;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>A. O*(log⁡*n)</p>
+<p>B. O*(*n)</p>
+<p>C. O*(<em>n</em>log⁡<em>n</em>)</p>
+<p>D. O*(*n²)</p>
+<p>根据给定的代码片段，我们可以分析其时间复杂度。</p>
+<p>外层循环的迭代次数由 <code>i *= 2</code> 控制，<code>i</code> 的初始值为 1，每次循环将 <code>i</code> 乘以 2，直到 <code>i</code> 不小于 <code>n</code> 时退出循环。因此，外层循环的迭代次数为 <code>log₂(n)</code>。</p>
+<p>内层循环的迭代次数由外层循环的当前 <code>i</code> 控制，每次循环从 0 迭代到 <code>i-1</code>，共 <code>i</code> 次迭代。</p>
+<p>因此，总的迭代次数可以表示为：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 + 2 + 4 + 8 + ... + n/4 + n/2 + n</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>这是一个等比数列求和，根据等比数列求和公式，可知总的迭代次数为 <code>2n - 1</code>。</p>
+<p>因此，根据迭代次数分析，给定代码片段的时间复杂度为 <code>O(n)</code>。</p>
+<p><strong>2、以下叙述中正确的是（ <u>A</u>）</strong></p>
+<p>A、函数名代表该函数入口地址</p>
+<p>B、所有函数不能接受函数名作为实参传入</p>
+<p>C、函数体中的语句不能对自己的调用</p>
+<p>D、如果函数带有参数,就不能调用自己</p>
+<p><strong>3、在 C 语言中，以下哪个选项是正确的文件打开模式（<u>B</u> ）</strong></p>
+<p>A. r+b</p>
+<p>B. w+b</p>
+<p>C. a+b</p>
+<p>D. r+w+b</p>
+<p>解析：w+b 是 C 语言中用于读写二进制文件的模式。其他选项分别表示读取文本文件(r)、写入文本文件(w)和追加文本文件(a)</p>
+<p><strong>4、在 Java 语言中，以下哪个选项是正确的错误处理方式（ <u>A</u>）</strong></p>
+<p>A. try-catch-finally</p>
+<p>B. throw-catch-finally</p>
+<p>C. catch-throw-finally</p>
+<p>D. finally-catch-throw</p>
+<p><strong>5、C语言中，不合法的字符常量是（ <u>B</u>）</strong></p>
+<p>A. ‘\t’</p>
+<p>B.“a”</p>
+<p>C. ‘a’</p>
+<p>D.‘\x32’</p>
+<p><strong>6、C语言的编译过程（ <u>B</u>）</strong></p>
+<p>a.预处理 b.汇编 c.编译 d. 链接</p>
+<p>A. abcd</p>
+<p>B. acbd</p>
+<p>C. adbc</p>
+<p>D. abc</p>
+<h1 id="二、填空题（6×5-x3D-30分）"><a href="#二、填空题（6×5-x3D-30分）" class="headerlink" title="二、填空题（6×5&#x3D;30分）"></a>二、填空题（6×5&#x3D;30分）</h1><p>1、下面代码的<code>f()</code>执行了（ <u>10</u>）次</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> n = <span class="number">11</span>;</span><br><span class="line"><span class="keyword">while</span>(--n) f();</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>2、已知字母a的ASCII码为十进制数97,且设ch为字符型变量,则表达式 <code>ch = &#39;a&#39; + 8 - 3;</code> ，<code>ch</code>的值为（ <u>‘f’</u>）(用字符来表示)</p>
+<p>3、<code>char str[]=“1234”</code>, <code>*p=str</code>,则 <code>*(p+1)</code>是（<u>2</u> ）</p>
+<p>4、下面代码输出是（<u>6</u>）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span> + <span class="number">2</span> &gt;&gt; <span class="number">1</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, a);</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>5、以下代码段的输出结果是（<u>12</u> ）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> x = <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span> y = x++ + ++x;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, y);</span><br></pre></td></tr></table></figure>
+
+<p>6、以下代码段的输出结果是（<u>a</u> ）</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> ch1=<span class="string">&#x27;A&#x27;</span>,ch2=<span class="string">&#x27;a&#x27;</span>;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,(ch1,ch2));</span><br></pre></td></tr></table></figure>
+
+<p>在给定的代码中，使用了逗号操作符<code>(ch1, ch2)</code>作为printf函数的参数。</p>
+<p>逗号操作符在C语言中的作用是对多个表达式进行求值，并返回最后一个表达式的值。在这种情况下，<code>(ch1, ch2)</code>首先对ch1求值，然后对ch2求值，最终返回ch2的值。</p>
+<h1 id="三、算法设计-反转链表（20分）"><a href="#三、算法设计-反转链表（20分）" class="headerlink" title="三、算法设计-反转链表（20分）"></a>三、算法设计-反转链表（20分）</h1><p>csdn:</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/nanfeibuyi/article/details/90116419?ops_request_misc=%7B%22request_id%22:%22168777884716800188565755%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=168777884716800188565755&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-90116419-null-null.142">https://blog.csdn.net/nanfeibuyi/article/details/90116419?ops_request_misc=%7B%22request%5Fid%22%3A%22168777884716800188565755%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&amp;request_id=168777884716800188565755&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-90116419-null-null.142</a></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="comment">//链表节点定义 </span></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">s_node</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">	<span class="type">int</span> data;</span><br><span class="line">	<span class="class"><span class="keyword">struct</span> <span class="title">s_node</span>* <span class="title">pNext</span>;</span></span><br><span class="line">&#125;Node;</span><br><span class="line"> </span><br><span class="line">Node* <span class="title function_">create_list_head</span><span class="params">()</span>;</span><br><span class="line">Node* <span class="title function_">create_new_node</span><span class="params">(<span class="type">int</span> node_data)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">add_node_head</span><span class="params">(Node* head, Node* new_node)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">display_list</span><span class="params">(Node* head)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">free_list</span><span class="params">(Node* head)</span>;</span><br><span class="line">Node* <span class="title function_">revert_list</span><span class="params">(Node* head)</span>;</span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> *argv[])</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="comment">//创建链表 </span></span><br><span class="line">	Node* head = create_list_head();</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> == head)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;create_list_head failed!\n&quot;</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//填充数据（添加节点） </span></span><br><span class="line">	<span class="type">int</span> i;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">1</span>; i&lt;<span class="number">8</span>; i++)</span><br><span class="line">		add_node_head(head, create_new_node(i));</span><br><span class="line"> </span><br><span class="line">	<span class="comment">//打印原来链表数据 </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;befor &quot;</span>); </span><br><span class="line">	display_list(head);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//反转链表</span></span><br><span class="line">	head = revert_list(head); </span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;after &quot;</span>); </span><br><span class="line">	display_list(head);</span><br><span class="line">	</span><br><span class="line">	<span class="comment">//释放链表空间 </span></span><br><span class="line">	free_list(head);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//创建链表 </span></span><br><span class="line">Node* <span class="title function_">create_list_head</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	Node* head = (Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> != head)</span><br><span class="line">	&#123;</span><br><span class="line">		head-&gt;data= <span class="number">-1</span>;</span><br><span class="line">		head-&gt;pNext= <span class="literal">NULL</span>;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> head;</span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line"><span class="comment">//创建新节点 </span></span><br><span class="line">Node* <span class="title function_">create_new_node</span><span class="params">(<span class="type">int</span> node_data)</span></span><br><span class="line">&#123;</span><br><span class="line">	Node* new_node = (Node*)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(Node));</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> != new_node)</span><br><span class="line">	&#123;</span><br><span class="line">		new_node-&gt;data= node_data;</span><br><span class="line">		new_node-&gt;pNext= <span class="literal">NULL</span>;	</span><br><span class="line">	&#125;	</span><br><span class="line">	<span class="keyword">return</span> new_node;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//头插法</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">add_node_head</span><span class="params">(Node* head, Node* new_node)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> == head || <span class="literal">NULL</span> == new_node)</span><br><span class="line">		<span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line"> 	new_node-&gt;pNext = head-&gt;pNext;</span><br><span class="line">	head-&gt;pNext = new_node;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line"><span class="comment">//打印链表数据 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">display_list</span><span class="params">(Node* head)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> == head)</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	Node* tmp = head;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;list data:&quot;</span>);</span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">NULL</span> !=(tmp=tmp-&gt;pNext))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%d  &quot;</span>, tmp-&gt;data);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//释放链表 </span></span><br><span class="line"><span class="type">void</span> <span class="title function_">free_list</span><span class="params">(Node* head)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> == head) </span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line">	Node* p = head;</span><br><span class="line">	<span class="keyword">while</span>(p = p-&gt;pNext)</span><br><span class="line">	&#123;</span><br><span class="line">		head-&gt;pNext = p-&gt;pNext;</span><br><span class="line">		<span class="comment">//printf(&quot;free:%d\n&quot;, p-&gt;data);</span></span><br><span class="line">		<span class="built_in">free</span>(p);</span><br><span class="line">		p = head;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">free</span>(head);</span><br><span class="line">&#125; </span><br><span class="line"> </span><br><span class="line"><span class="comment">//头插方式1-反转链表 </span></span><br><span class="line">Node* <span class="title function_">revert_list</span><span class="params">(Node* head)</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">if</span>(<span class="literal">NULL</span> == head)</span><br><span class="line">		<span class="keyword">return</span>;</span><br><span class="line"> </span><br><span class="line">	Node* p = head-&gt;pNext;</span><br><span class="line">	head-&gt;pNext= <span class="literal">NULL</span>;</span><br><span class="line">	Node* tmp = <span class="literal">NULL</span>;</span><br><span class="line">	<span class="keyword">while</span>(p)</span><br><span class="line">	&#123;</span><br><span class="line">		tmp = p-&gt;pNext;</span><br><span class="line">		add_node_head(head, p); </span><br><span class="line">		p = tmp;	</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> head;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
 	
 		</div>
 		
@@ -310,8 +366,12 @@
 	<span>
 		<a id="totop-post-page">To Top</a>
 		
+			<a href="/2023/06/28/post/" title="post" rel="prev">
+				&laquo;Pre post
+			</a>
 		
-			<a href="/2023/06/28/post/" title="post" rel="next">
+		
+			<a href="/2023/06/05/%E7%AE%97%E6%B3%95%E9%A2%98%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/" title="算法题（C语言）01" rel="next">
 				Next post&raquo;
 			</a>
 			
@@ -332,6 +392,28 @@
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/28/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 28日, 2023				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/28/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2023/06/28/post/" title="post">
 								post			
 							</a>
@@ -348,29 +430,6 @@
 							<a href="/2023/06/28/post/" title="post">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="post"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">
-								2023项目组招新			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 26日, 2023				
-							</p>
-							<p class="relate-post-content">
-								一、选择题（6×5&#x3D;30分）1、下列程序段的时间复杂度是（ B）
-1234int sum = 0;for (int i = 1; i &lt; n; i *= 2)     for (int j = 0; j &lt; i;...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2023项目组招新"/>
 							</a>
 						</div>
 					</li>												
