@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      朝阳与落日_史铁生 | llihuibear
+      JAVA基础 | llihuibear
     
   </title>
   <meta name="author" content="John Doe">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「朝阳与落日_史铁生」
+			「JAVA基础」
 		
 	</p>
 
@@ -227,14 +227,27 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
 	 
 
 <div class="layout-post">
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" itemprop="url">
-		朝阳与落日_史铁生
+	<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" itemprop="url">
+		JAVA基础
 	</a>
 
 		</div>
@@ -250,9 +263,9 @@
 
 	更新于
 
-	<a href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" itemprop="url">
-		<time datetime="2023-01-31T16:00:00.000Z" itemprop="dateUpdated">
-	  		2023-06-13
+	<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" itemprop="url">
+		<time datetime="2023-06-28T23:09:46.000Z" itemprop="dateUpdated">
+	  		2023-06-29
 	  </time>
 	</a> 
 
@@ -263,8 +276,8 @@
 				
 	<i class="icon-price-tags"></i>
 	
-		<a href="/tags/%E5%8F%B2%E9%93%81%E7%94%9F/" class=" ">
-			史铁生
+		<a href="/tags/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98/" class=" ">
+			黑马程序员
 		</a>
 	
 		
@@ -277,9 +290,292 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<p><em><strong>但是太阳它每时每刻都是夕阳也都是旭日。当它熄灭着走下山去收尽苍凉残照之际，正是它在另一面燃烧着爬上山巅布散烈烈朝晖之时。那一天我也将沉静着走下山去，扶着我的拐杖。有一天，在某一处山洼里，势必会跑出来一个欢蹦的孩子，抱着他的玩具。</strong></em></p>
-<p><em><strong>当然，那不是我。</strong></em></p>
-<p><em><strong>但是，那不是我吗？</strong></em></p>
+			<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="基本语法-1"><a href="#基本语法-1" class="headerlink" title="基本语法"></a>基本语法</h2><p>编写 Java 程序时，应注意以下几点：</p>
+<ul>
+<li><strong>大小写敏感</strong>：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。</li>
+<li><strong>类名</strong>：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写，例如 <strong>MyFirstJavaClass</strong> 。</li>
+<li><strong>方法名</strong>：所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写。</li>
+<li><strong>源文件名</strong>：源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 <strong>.java</strong>。（如果文件名和类名不相同则会导致编译错误）。</li>
+<li><strong>主方法入口</strong>：所有的 Java 程序由 <strong>public static void main(String[] args)</strong> 方法开始执行。</li>
+</ul>
+<h2 id="Java-标识符"><a href="#Java-标识符" class="headerlink" title="Java 标识符"></a>Java 标识符</h2><p>Java 所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。</p>
+<p>关于 Java 标识符，有以下几点需要注意：</p>
+<ul>
+<li>所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始</li>
+<li>首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合</li>
+<li>关键字不能用作标识符</li>
+<li>标识符是大小写敏感的</li>
+<li>合法标识符举例：age、$salary、_value、__1_value</li>
+<li>非法标识符举例：123abc、-salary</li>
+</ul>
+<h2 id="Java修饰符"><a href="#Java修饰符" class="headerlink" title="Java修饰符"></a>Java修饰符</h2><p>像其他语言一样，Java可以使用修饰符来修饰类中方法和属性。主要有两类修饰符：</p>
+<ul>
+<li>访问控制修饰符 : default, public , protected, private</li>
+<li>非访问控制修饰符 : final, abstract, static, synchronized</li>
+</ul>
+<h2 id="Java-变量"><a href="#Java-变量" class="headerlink" title="Java 变量"></a>Java 变量</h2><p>Java 中主要有如下几种类型的变量</p>
+<ul>
+<li>局部变量</li>
+<li>类变量（静态变量）</li>
+<li>成员变量（非静态变量）</li>
+</ul>
+<h2 id="Java-数组"><a href="#Java-数组" class="headerlink" title="Java 数组"></a>Java 数组</h2><p>数组是储存在堆上的对象，可以保存多个同类型变量。在后面的章节中，我们将会学到如何声明、构造以及初始化一个数组。</p>
+<h2 id="Java-关键字"><a href="#Java-关键字" class="headerlink" title="Java 关键字"></a>Java 关键字</h2><table>
+<thead>
+<tr>
+<th align="center">类别</th>
+<th align="center">关键字</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">访问控制</td>
+<td align="center">private</td>
+<td align="center">私有的</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">protected</td>
+<td align="center">受保护的</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">public</td>
+<td align="center">公共的</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">default</td>
+<td align="center">默认</td>
+</tr>
+<tr>
+<td align="center">类、方法和变量修饰符</td>
+<td align="center">abstract</td>
+<td align="center">声明抽象</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">class</td>
+<td align="center">类</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">extends</td>
+<td align="center">扩充、继承</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">final</td>
+<td align="center">最终值、不可改变的</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">implements</td>
+<td align="center">实现（接口）</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">interface</td>
+<td align="center">接口</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">native</td>
+<td align="center">本地、原生方法（非 Java 实现）</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">new</td>
+<td align="center">创建</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">static</td>
+<td align="center">静态</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">strictfp</td>
+<td align="center">严格浮点、精准浮点</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">synchronized</td>
+<td align="center">线程、同步</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">transient</td>
+<td align="center">短暂</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">volatile</td>
+<td align="center">易失</td>
+</tr>
+<tr>
+<td align="center">程序控制语句</td>
+<td align="center">break</td>
+<td align="center">跳出循环</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">case</td>
+<td align="center">定义一个值以供 switch 选择</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">continue</td>
+<td align="center">继续</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">do</td>
+<td align="center">运行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">else</td>
+<td align="center">否则</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">for</td>
+<td align="center">循环</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">if</td>
+<td align="center">如果</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">instanceof</td>
+<td align="center">实例</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">return</td>
+<td align="center">返回</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">switch</td>
+<td align="center">根据值选择执行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">while</td>
+<td align="center">循环</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">assert</td>
+<td align="center">断言表达式是否为真</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">catch</td>
+<td align="center">捕捉异常</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">finally</td>
+<td align="center">有没有异常都执行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">throw</td>
+<td align="center">抛出一个异常对象</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">throws</td>
+<td align="center">声明一个异常可能被抛出</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">try</td>
+<td align="center">捕获异常</td>
+</tr>
+<tr>
+<td align="center">包相关</td>
+<td align="center">import</td>
+<td align="center">引入</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">package</td>
+<td align="center">包</td>
+</tr>
+<tr>
+<td align="center">基本类型</td>
+<td align="center">boolean</td>
+<td align="center">布尔型</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">byte</td>
+<td align="center">字节型</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">char</td>
+<td align="center">字符型</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">double</td>
+<td align="center">双精度浮点</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">float</td>
+<td align="center">单精度浮点</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">int</td>
+<td align="center">整型</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">long</td>
+<td align="center">长整型</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">short</td>
+<td align="center">短整型</td>
+</tr>
+<tr>
+<td align="center">变量引用</td>
+<td align="center">super</td>
+<td align="center">父类、超类</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">this</td>
+<td align="center">本类</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">void</td>
+<td align="center">无返回值</td>
+</tr>
+<tr>
+<td align="center">保留关键字</td>
+<td align="center">goto</td>
+<td align="center">是关键字，但不能使用</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">const</td>
+<td align="center">是关键字，但不能使用</td>
+</tr>
+</tbody></table>
+<h2 id="Java注释"><a href="#Java注释" class="headerlink" title="Java注释"></a>Java注释</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">   <span class="comment">/* 这是第一个Java程序</span></span><br><span class="line"><span class="comment">    * 它将输出 Hello World</span></span><br><span class="line"><span class="comment">    * 这是一个多行注释的示例</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">       <span class="comment">// 这是单行注释的示例</span></span><br><span class="line">       <span class="comment">/* 这个也是单行注释的示例 */</span></span><br><span class="line">       System.out.println(<span class="string">&quot;Hello World&quot;</span>); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 	
 		</div>
 		
@@ -298,12 +594,8 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2023/06/05/%E9%A2%98%E8%A7%A3/" title="图灵算法协会01" rel="prev">
-				&laquo;上一篇
-			</a>
 		
-		
-			<a href="/2023/02/01/%E6%94%BE%E4%B8%8B%E4%B8%8E%E6%89%A7%E7%9D%80_%E5%8F%B2%E9%93%81%E7%94%9F/" title="放下与执着——史铁生" rel="next">
+			<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8001/" title="JAVA基础" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -321,100 +613,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/02/01/%E6%94%BE%E4%B8%8B%E4%B8%8E%E6%89%A7%E7%9D%80_%E5%8F%B2%E9%93%81%E7%94%9F/" title="放下与执着——史铁生">
-								放下与执着——史铁生			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								二月 1日, 2023				
-							</p>
-							<p class="relate-post-content">
-								放下与执着　几位老友，不常见面，见了面总劝我“放下”。放下什么呢?没说，断续劝我：“把一切都放下，人就不会生病。”我发现我有点儿狡猾了，明知那是句佛家经常的教诲(比如“放下屠刀，立地成佛”；“屠刀”也不专指索命的器具，是说一切迷执)，...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/02/01/%E6%94%BE%E4%B8%8B%E4%B8%8E%E6%89%A7%E7%9D%80_%E5%8F%B2%E9%93%81%E7%94%9F/" title="放下与执着——史铁生">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="放下与执着——史铁生"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/02/01/%E7%88%B1%E6%83%85%E9%97%AE%E9%A2%98-%E5%8F%B2%E9%93%81%E7%94%9F/" title="爱情问题_史铁生">
-								爱情问题_史铁生			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								二月 1日, 2023				
-							</p>
-							<p class="relate-post-content">
-								有人说，世界上，每分每秒都有贝多芬的乐曲在奏响在回荡，如果真有外星人的话，他们会把这声音认作地球的标志（就像土星有一道美丽的环），据此来辨认我们居于其上的这颗星星。这是个浪漫的想象。何妨再浪漫些呢？若真有外星人，外星人爷爷必定会告诉外...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/02/01/%E7%88%B1%E6%83%85%E9%97%AE%E9%A2%98-%E5%8F%B2%E9%93%81%E7%94%9F/" title="爱情问题_史铁生">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="爱情问题_史铁生"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">
-								记忆与印象2_史铁生			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								二月 1日, 2023				
-							</p>
-							<p class="relate-post-content">
-								记忆与印象2　一群鸽子，雪白，悠扬。一群男孩和女孩疯疯癫癫五光十色。
-　鸽子在阳光下的楼群里吟咏，徘徊。男孩和女孩在公路上骑车飞跑。
-　年年如此，天上地下。
-　太阳地里的老人闭目养神，男孩和女孩的事他了如指掌——除了不知道还要在这太阳...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="记忆与印象2_史铁生"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" title="JAVA基础">
-								JAVA基础			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 29日, 2023				
-							</p>
-							<p class="relate-post-content">
-								基本语法基本语法编写 Java 程序时，应注意以下几点：
-
-大小写敏感：Java 是大小写敏感的，这就意味着标识符 Hello 与 hello 是不同的。
-类名：对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" title="JAVA基础">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVA基础"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -507,6 +705,98 @@
 							<a href="/2023/06/05/%E9%A2%98%E8%A7%A3/" title="图灵算法协会01">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="图灵算法协会01"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" title="朝阳与落日_史铁生">
+								朝阳与落日_史铁生			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 1日, 2023				
+							</p>
+							<p class="relate-post-content">
+								但是太阳它每时每刻都是夕阳也都是旭日。当它熄灭着走下山去收尽苍凉残照之际，正是它在另一面燃烧着爬上山巅布散烈烈朝晖之时。那一天我也将沉静着走下山去，扶着我的拐杖。有一天，在某一处山洼里，势必会跑出来一个欢蹦的孩子，抱着他的玩具。
+当然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" title="朝阳与落日_史铁生">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="朝阳与落日_史铁生"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/02/01/%E6%94%BE%E4%B8%8B%E4%B8%8E%E6%89%A7%E7%9D%80_%E5%8F%B2%E9%93%81%E7%94%9F/" title="放下与执着——史铁生">
+								放下与执着——史铁生			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 1日, 2023				
+							</p>
+							<p class="relate-post-content">
+								放下与执着　几位老友，不常见面，见了面总劝我“放下”。放下什么呢?没说，断续劝我：“把一切都放下，人就不会生病。”我发现我有点儿狡猾了，明知那是句佛家经常的教诲(比如“放下屠刀，立地成佛”；“屠刀”也不专指索命的器具，是说一切迷执)，...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/02/01/%E6%94%BE%E4%B8%8B%E4%B8%8E%E6%89%A7%E7%9D%80_%E5%8F%B2%E9%93%81%E7%94%9F/" title="放下与执着——史铁生">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="放下与执着——史铁生"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/02/01/%E7%88%B1%E6%83%85%E9%97%AE%E9%A2%98-%E5%8F%B2%E9%93%81%E7%94%9F/" title="爱情问题_史铁生">
+								爱情问题_史铁生			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 1日, 2023				
+							</p>
+							<p class="relate-post-content">
+								有人说，世界上，每分每秒都有贝多芬的乐曲在奏响在回荡，如果真有外星人的话，他们会把这声音认作地球的标志（就像土星有一道美丽的环），据此来辨认我们居于其上的这颗星星。这是个浪漫的想象。何妨再浪漫些呢？若真有外星人，外星人爷爷必定会告诉外...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/02/01/%E7%88%B1%E6%83%85%E9%97%AE%E9%A2%98-%E5%8F%B2%E9%93%81%E7%94%9F/" title="爱情问题_史铁生">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="爱情问题_史铁生"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">
+								记忆与印象2_史铁生			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								二月 1日, 2023				
+							</p>
+							<p class="relate-post-content">
+								记忆与印象2　一群鸽子，雪白，悠扬。一群男孩和女孩疯疯癫癫五光十色。
+　鸽子在阳光下的楼群里吟咏，徘徊。男孩和女孩在公路上骑车飞跑。
+　年年如此，天上地下。
+　太阳地里的老人闭目养神，男孩和女孩的事他了如指掌——除了不知道还要在这太阳...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="记忆与印象2_史铁生"/>
 							</a>
 						</div>
 					</li>												
