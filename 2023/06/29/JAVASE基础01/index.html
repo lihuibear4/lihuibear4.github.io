@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      JAVA基础01 | llihuibear
+      JAVASE基础01 | llihuibear
     
   </title>
   <meta name="author" content="John Doe">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「JAVA基础01」
+			「JAVASE基础01」
 		
 	</p>
 
@@ -246,8 +246,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8001/" itemprop="url">
-		JAVA基础01
+	<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8001/" itemprop="url">
+		JAVASE基础01
 	</a>
 
 		</div>
@@ -263,9 +263,9 @@
 
 	更新于
 
-	<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8001/" itemprop="url">
+	<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8001/" itemprop="url">
 		<time datetime="2023-06-28T23:09:46.000Z" itemprop="dateUpdated">
-	  		2023-06-29
+	  		2023-06-30
 	  </time>
 	</a> 
 
@@ -276,12 +276,12 @@
 				
 	<i class="icon-price-tags"></i>
 	
-		<a href="/tags/%E9%A1%B9%E7%9B%AE%E7%BB%84/" class=" ">
-			项目组
-		</a>
-	
 		<a href="/tags/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98/" class=" ">
 			黑马程序员
+		</a>
+	
+		<a href="/tags/%E9%A1%B9%E7%9B%AE%E7%BB%84/" class=" ">
+			项目组
 		</a>
 	
 		
@@ -305,12 +305,12 @@
 <h2 id="Java-标识符"><a href="#Java-标识符" class="headerlink" title="Java 标识符"></a>Java 标识符</h2><p>Java 所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。</p>
 <p>关于 Java 标识符，有以下几点需要注意：</p>
 <ul>
-<li>所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始</li>
-<li>首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合</li>
-<li>关键字不能用作标识符</li>
-<li>标识符是大小写敏感的</li>
+<li>所有的标识符都应该以<strong>数字</strong>、<strong>字母</strong>（A-Z 或者 a-z） 、<strong>美元符</strong>（$）、或者<strong>下划线</strong>（_）开始</li>
+<li><u><strong>不能</strong></u>是数字开头</li>
+<li><u><strong>不能</strong></u>是关键字</li>
+<li>标识符是<strong>大小写敏感</strong>的</li>
 <li>合法标识符举例：age、$salary、_value、__1_value</li>
-<li>非法标识符举例：123abc、-salary</li>
+<li>非法标识符举例：123abc、-salary、#itheima</li>
 </ul>
 <h2 id="Java修饰符"><a href="#Java修饰符" class="headerlink" title="Java修饰符"></a>Java修饰符</h2><p>像其他语言一样，Java可以使用修饰符来修饰类中方法和属性。主要有两类修饰符：</p>
 <ul>
@@ -629,6 +629,8 @@
 <td align="center">true,flase</td>
 </tr>
 </tbody></table>
+<p><strong>long类型，为了防止不兼容，要加L<br></strong></p>
+<p><strong>float类型，为了防止不兼容，要加L</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PrimitiveTypeTest</span> &#123;  </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;  </span><br><span class="line">        <span class="comment">// byte  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：byte 二进制位数：&quot;</span> + Byte.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Byte&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Byte.MIN_VALUE=&quot;</span> + Byte.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Byte.MAX_VALUE=&quot;</span> + Byte.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// short  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：short 二进制位数：&quot;</span> + Short.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Short&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Short.MIN_VALUE=&quot;</span> + Short.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Short.MAX_VALUE=&quot;</span> + Short.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// int  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：int 二进制位数：&quot;</span> + Integer.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Integer&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Integer.MIN_VALUE=&quot;</span> + Integer.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Integer.MAX_VALUE=&quot;</span> + Integer.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// long  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：long 二进制位数：&quot;</span> + Long.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Long&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Long.MIN_VALUE=&quot;</span> + Long.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Long.MAX_VALUE=&quot;</span> + Long.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// float  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：float 二进制位数：&quot;</span> + Float.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Float&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Float.MIN_VALUE=&quot;</span> + Float.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Float.MAX_VALUE=&quot;</span> + Float.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// double  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：double 二进制位数：&quot;</span> + Double.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Double&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Double.MIN_VALUE=&quot;</span> + Double.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Double.MAX_VALUE=&quot;</span> + Double.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// char  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：char 二进制位数：&quot;</span> + Character.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Character&quot;</span>);  </span><br><span class="line">        <span class="comment">// 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Character.MIN_VALUE=&quot;</span>  </span><br><span class="line">                + (<span class="type">int</span>) Character.MIN_VALUE);  </span><br><span class="line">        <span class="comment">// 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Character.MAX_VALUE=&quot;</span>  </span><br><span class="line">                + (<span class="type">int</span>) Character.MAX_VALUE);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h3><table>
@@ -733,7 +735,13 @@
 </tbody></table>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">printall</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="comment">//字符常量输出</span></span><br><span class="line">        System.out.println(<span class="string">&quot;lihuibear&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;xiaoxiong&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//整数常量</span></span><br><span class="line">        System.out.println(<span class="number">20030304</span>);</span><br><span class="line">        System.out.println(-<span class="number">20230512</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//小数常量</span></span><br><span class="line">        System.out.println(<span class="number">13.14</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//字符常量</span></span><br><span class="line">        System.out.println(<span class="string">&#x27;A&#x27;</span>);</span><br><span class="line">        System.out.println(<span class="string">&#x27;X&#x27;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//布尔常量</span></span><br><span class="line">        System.out.println(<span class="literal">true</span>);</span><br><span class="line">        System.out.println(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//空常量</span></span><br><span class="line">        <span class="comment">//空常量不能直接输出</span></span><br><span class="line"><span class="comment">//        System.out.println(null);</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="自动类型转化"><a href="#自动类型转化" class="headerlink" title="自动类型转化"></a>自动类型转化</h3><p><strong>必须满足转换前的数据类型的位数要低于转换后的数据类型</strong></p>
+<h2 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h2><h3 id="自动类型转化"><a href="#自动类型转化" class="headerlink" title="自动类型转化"></a>自动类型转化</h3><p>数据范围大小（小到大）</p>
+<p><code>byte→short↘</code></p>
+<p>​								<code>int→long→float→double</code></p>
+<p>​			<code>char↗</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ZiDongLeiZhuan</span>&#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">            <span class="type">int</span> a=<span class="number">10</span>;</span><br><span class="line">            <span class="type">float</span> b=a;</span><br><span class="line">            <span class="type">byte</span> c=<span class="number">11</span>;</span><br><span class="line">            <span class="type">short</span> d=c;</span><br><span class="line">            System.out.println(a);</span><br><span class="line">            System.out.println(b);</span><br><span class="line">            System.out.println(c);</span><br><span class="line">            System.out.println(d);</span><br><span class="line">  </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">10</span></span><br><span class="line"><span class="comment">10.0</span></span><br><span class="line"><span class="comment">11</span></span><br><span class="line"><span class="comment">11</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>必须满足转换前的数据类型的位数要低于转换后的数据类型</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ZiDongLeiZhuan</span>&#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">            <span class="type">char</span> c1=<span class="string">&#x27;a&#x27;</span>;<span class="comment">//定义一个char类型</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> c1;<span class="comment">//char自动类型转换为int</span></span><br><span class="line">            System.out.println(<span class="string">&quot;char自动类型转换为int后的值等于&quot;</span>+i1);</span><br><span class="line">            <span class="type">char</span> <span class="variable">c2</span> <span class="operator">=</span> <span class="string">&#x27;A&#x27;</span>;<span class="comment">//定义一个char类型</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">i2</span> <span class="operator">=</span> c2+<span class="number">1</span>;<span class="comment">//char 类型和 int 类型计算</span></span><br><span class="line">            System.out.println(<span class="string">&quot;char类型和int计算后的值等于&quot;</span>+i2);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//char自动类型转换为int后的值等于97</span></span><br><span class="line"><span class="comment">//char类型和int计算后的值等于66</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p><strong>1.条件是转换的数据类型必须是兼容的。</strong></p>
@@ -758,7 +766,7 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" title="JAVA基础00" rel="prev">
+			<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00" rel="prev">
 				&laquo;上一篇
 			</a>
 		
@@ -784,8 +792,60 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" title="JAVA基础00">
-								JAVA基础00			
+							<a class="relate-post-title" href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8003/" title="JAVASE基础03">
+								JAVASE基础03			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 30日, 2023				
+							</p>
+							<p class="relate-post-content">
+								数组格式推荐格式
+格式一: 数据类型[]   变量名例:           int[] arr
+定义了一个int类型的数组，数组名是arr
+格式二: 数据类型 变量名[]                 int arr[]
+定义了一...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8003/" title="JAVASE基础03">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础03"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8002/" title="JAVASE基础02">
+								JAVASE基础02			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 30日, 2023				
+							</p>
+							<p class="relate-post-content">
+								运算符算数运算符+、-、*、&#x2F;、%
+不同类型，转换为高类型，13.14+10-&gt;float;
+字符串的+操作-&gt;做的是字符串的拼接工作
+技巧：从左到右，先遇到字符串就进行拼接，先遇到连续数字就进行+操作
+1234...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8002/" title="JAVASE基础02">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础02"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">
+								JAVASE基础00			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
@@ -798,9 +858,9 @@
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2023/06/29/JAVA%E5%9F%BA%E7%A1%8000/" title="JAVA基础00">				
+							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVA基础00"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
 							</a>
 						</div>
 					</li>												
@@ -946,31 +1006,6 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">
-								记忆与印象2_史铁生			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								二月 1日, 2023				
-							</p>
-							<p class="relate-post-content">
-								记忆与印象2　一群鸽子，雪白，悠扬。一群男孩和女孩疯疯癫癫五光十色。
-　鸽子在阳光下的楼群里吟咏，徘徊。男孩和女孩在公路上骑车飞跑。
-　年年如此，天上地下。
-　太阳地里的老人闭目养神，男孩和女孩的事他了如指掌——除了不知道还要在这太阳...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/02/01/%E8%AE%B0%E5%BF%86%E4%B8%8E%E5%8D%B0%E8%B1%A12-%E5%8F%B2%E9%93%81%E7%94%9F/" title="记忆与印象2_史铁生">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="记忆与印象2_史铁生"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" title="朝阳与落日_史铁生">
 								朝阳与落日_史铁生			
 							</a>
@@ -988,40 +1023,6 @@
 							<a href="/2023/02/01/%E6%9C%9D%E9%98%B3%E4%B8%8E%E8%90%BD%E6%97%A5-%E5%8F%B2%E9%93%81%E7%94%9F/" title="朝阳与落日_史铁生">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="朝阳与落日_史铁生"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/01/01/%E6%88%91%E7%9A%84%E8%AF%97-%E7%90%86%E6%83%B3%E4%B8%8E%E7%90%86%E6%83%B3/" title="我的诗_理想与理想">
-								我的诗_理想与理想			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								一月 1日, 2023				
-							</p>
-							<p class="relate-post-content">
-								理想与理想海边少年有着理想
-他在梦里歌唱
-在梦里低吟
-不要去纠结一些没有答案的事情
-以及没有结局的人
-其实很多东西都是事在人为
-不是无缘而是不愿
-各花各有各花香
-各山各水各有林
-要比爱鲜花更爱自己
-要比明天更加幸福
-要比爱她更爱自己
-...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/01/01/%E6%88%91%E7%9A%84%E8%AF%97-%E7%90%86%E6%83%B3%E4%B8%8E%E7%90%86%E6%83%B3/" title="我的诗_理想与理想">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="我的诗_理想与理想"/>
 							</a>
 						</div>
 					</li>												
