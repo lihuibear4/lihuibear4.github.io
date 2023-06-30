@@ -227,6 +227,19 @@
 		插件作者：KELEN
 		插件来源: https://github.com/KELEN/katelog
 -->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/plugin/toc/katelog.min.js"></script>
+
+
+		
 	 
 
 <div class="layout-post">
@@ -260,7 +273,18 @@
 
 			</span>
 			<span>
-						
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/tags/%E9%A1%B9%E7%9B%AE%E7%BB%84/" class=" ">
+			项目组
+		</a>
+	
+		<a href="/tags/%E9%BB%91%E9%A9%AC%E7%A8%8B%E5%BA%8F%E5%91%98/" class=" ">
+			黑马程序员
+		</a>
+	
+		
 			</span>
 			
 			
@@ -270,7 +294,14 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-				
+			<h2 id="题目演练"><a href="#题目演练" class="headerlink" title="题目演练"></a>题目演练</h2><h3 id="1-遍历数组"><a href="#1-遍历数组" class="headerlink" title="1.遍历数组"></a>1.遍历数组</h3><p>设计一个方法用于数组遍历，要求遍历的结果是在一行上的。例如:[11,22,33,44,55]</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">pprintarr</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">int</span> [] arr =&#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>,<span class="number">44</span>,<span class="number">55</span>&#125;;</span><br><span class="line">    printarr(arr);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printarr</span><span class="params">(<span class="type">int</span> arr [])</span>&#123;</span><br><span class="line"></span><br><span class="line">        System.out.print(<span class="string">&quot;[&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i= <span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(i== arr.length-<span class="number">1</span>)&#123;</span><br><span class="line">                System.out.print(arr[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">               System.out.print(arr[i]+<span class="string">&quot;,&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;]&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-返回最大值"><a href="#2-返回最大值" class="headerlink" title="2.返回最大值"></a>2.返回最大值</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">getmax</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">scanf</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span>scanf.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span>scanf.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span>scanf.nextInt();</span><br><span class="line">        </span><br><span class="line">        getMax(a,b,c);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">getMax</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b, <span class="type">int</span> c)</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">max1</span> <span class="operator">=</span> (a&gt;b)?a:b;</span><br><span class="line">    <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> (max1&gt;c)?max1:c;</span><br><span class="line">    System.out.println(max);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-减肥计划（switch版）"><a href="#3-减肥计划（switch版）" class="headerlink" title="3.减肥计划（switch版）"></a>3.减肥计划（switch版）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> lihuibear;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">lihuibear</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span> (System.in);</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">w</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        jianfei(w);</span><br><span class="line">       <span class="keyword">while</span>(w!=<span class="number">0</span>) &#123;</span><br><span class="line">           w = sc.nextInt();</span><br><span class="line">           jianfei(w);</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">jianfei</span><span class="params">(<span class="type">int</span> w)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">switch</span> (w)&#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;跑步&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;游泳&quot;</span>);</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;慢走&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;单车&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;拳击&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;爬山&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;好好吃一顿&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;星期错误&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -386,6 +417,29 @@
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">
+								JAVASE基础00			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 29日, 2023				
+							</p>
+							<p class="relate-post-content">
+								JRE与JDK初步了解1.JRE(Java Runtime Environment)是Java程序的运行时环境，包含JVM 和运行时所需要的核心类库。我们想要运行一个已有的Java程序，那么只需安装JRE即可
+2.JDK (Java ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8001/" title="JAVASE基础01">
 								JAVASE基础01			
 							</a>
@@ -411,23 +465,23 @@
 			
 					<li>
 						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">
-								JAVASE基础00			
+							<a class="relate-post-title" href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">
+								2023项目组招新			
 							</a>
 							<p class="relate-post-date">
 								<i class="fa fa-calendar"></i>
-								六月 29日, 2023				
+								六月 26日, 2023				
 							</p>
 							<p class="relate-post-content">
-								JRE与JDK初步了解1.JRE(Java Runtime Environment)是Java程序的运行时环境，包含JVM 和运行时所需要的核心类库。我们想要运行一个已有的Java程序，那么只需安装JRE即可
-2.JDK (Java ...
+								一、选择题（6×5&#x3D;30分）1、下列程序段的时间复杂度是（ B）
+1234int sum = 0;for (int i = 1; i &lt; n; i *= 2)     for (int j = 0; j &lt; i;...
 							</p>
 						</div>
 
 						<div class="relate-post-cover">
-							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
+							<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">				
 								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2023项目组招新"/>
 							</a>
 						</div>
 					</li>												
@@ -450,29 +504,6 @@
 							<a href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" title="关于lihuibear">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="关于lihuibear"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">
-								2023项目组招新			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 26日, 2023				
-							</p>
-							<p class="relate-post-content">
-								一、选择题（6×5&#x3D;30分）1、下列程序段的时间复杂度是（ B）
-1234int sum = 0;for (int i = 1; i &lt; n; i *= 2)     for (int j = 0; j &lt; i;...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="2023项目组招新"/>
 							</a>
 						</div>
 					</li>												
