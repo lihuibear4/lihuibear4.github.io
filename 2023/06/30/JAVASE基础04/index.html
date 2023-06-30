@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      关于lihuibear | llihuibear
+      JAVASE基础04 | llihuibear
     
   </title>
   <meta name="author" content="John Doe">
@@ -100,7 +100,7 @@
 	<!-- Page title -->
 	<p>
 		
-			「关于lihuibear」
+			「JAVASE基础04」
 		
 	</p>
 
@@ -246,8 +246,8 @@
 	<div id="layout-post">
 		<div class="article-title">
 			
-	<a href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" itemprop="url">
-		关于lihuibear
+	<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8004/" itemprop="url">
+		JAVASE基础04
 	</a>
 
 		</div>
@@ -263,9 +263,9 @@
 
 	更新于
 
-	<a href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" itemprop="url">
-		<time datetime="2023-06-28T10:19:17.000Z" itemprop="dateUpdated">
-	  		2023-06-28
+	<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8004/" itemprop="url">
+		<time datetime="2023-06-30T06:37:40.385Z" itemprop="dateUpdated">
+	  		2023-06-30
 	  </time>
 	</a> 
 
@@ -273,14 +273,7 @@
 
 			</span>
 			<span>
-				
-	<i class="icon-price-tags"></i>
-	
-		<a href="/tags/lihuibear/" class=" ">
-			lihuibear
-		</a>
-	
-		
+						
 			</span>
 			
 			
@@ -290,7 +283,32 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1 id="lihuibear"><a href="#lihuibear" class="headerlink" title="lihuibear"></a><div align = "center">lihuibear</div></h1>	
+			<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>方法(method)是将具有独立功能的<font color=blue>代码块</font>组织成为一个整体，使其具有特殊功能的<font color=blue>代码集</font></p>
+<p><font color=red>注意:</font><br>方法必须先创建才可以使用，该过程称为<strong>方法定义</strong><br>方法创建后并不是直接运行的，需要手动使用后才执行，该过程称为<strong>方法调用</strong></p>
+<h3 id="方法的定义和调用"><a href="#方法的定义和调用" class="headerlink" title="方法的定义和调用"></a>方法的定义和调用</h3><h4 id="一般方法的定义"><a href="#一般方法的定义" class="headerlink" title="一般方法的定义"></a>一般方法的定义</h4><p><code>public static void isEvenNumber()&#123;</code></p>
+<p><code>//方法体</code></p>
+<p><code>&#125;</code></p>
+<h4 id="方法的调用"><a href="#方法的调用" class="headerlink" title="方法的调用"></a>方法的调用</h4><p><code>isEvenNumber()</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">printall</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Getmax();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">Getmax</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">num</span> <span class="operator">=</span><span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> num.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> num.nextInt();</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> max= (a&gt;b)?a:b;</span><br><span class="line">        </span><br><span class="line">        System.out.println(max);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="带参数的方法定义和调用"><a href="#带参数的方法定义和调用" class="headerlink" title="带参数的方法定义和调用"></a>带参数的方法定义和调用</h3><h4 id="带参数的方法定义"><a href="#带参数的方法定义" class="headerlink" title="带参数的方法定义"></a>带参数的方法定义</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630151422104.png" alt="image-20230630151422104"></p>
+<h4 id="带参数的方法调用"><a href="#带参数的方法调用" class="headerlink" title="带参数的方法调用"></a>带参数的方法调用</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630151642557.png" alt="image-20230630151642557"></p>
+<h4 id="形参和实参"><a href="#形参和实参" class="headerlink" title="形参和实参"></a>形参和实参</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630152616768.png" alt="image-20230630152616768"></p>
+<h3 id="带返回值方法的定义和调用"><a href="#带返回值方法的定义和调用" class="headerlink" title="带返回值方法的定义和调用"></a>带返回值方法的定义和调用</h3><h4 id="带返回值方法的定义"><a href="#带返回值方法的定义" class="headerlink" title="带返回值方法的定义"></a>带返回值方法的定义</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630153120783.png" alt="image-20230630153120783"></p>
+<h4 id="带返回值方法的调用"><a href="#带返回值方法的调用" class="headerlink" title="带返回值方法的调用"></a>带返回值方法的调用</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630171846247.png" alt="image-20230630171846247"></p>
+<h3 id="方法的注意事项"><a href="#方法的注意事项" class="headerlink" title="方法的注意事项"></a>方法的注意事项</h3><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630171746594.png" alt="image-20230630171746594"></p>
+<h4 id="通用格式"><a href="#通用格式" class="headerlink" title="通用格式"></a>通用格式</h4><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630172934511.png" alt="image-20230630172934511"></p>
+<h3 id="方法重载"><a href="#方法重载" class="headerlink" title="方法重载"></a>方法重载</h3><p>方法重载指同一个类中定义的多个方法之间的关系，满足下列条件的多个方法相互构成重载</p>
+<ol>
+<li><strong>多个方法在同一个类中</strong></li>
+<li><strong>多个方法具有相同的方法名</strong></li>
+<li><strong>多个方法的参数不相同，类型不同或者数量不同</strong></li>
+</ol>
+<p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630174259573.png" alt="image-20230630174259573"></p>
+<h4 id="练习："><a href="#练习：" class="headerlink" title="练习："></a>练习：</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">fangfachongzai</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">     	<span class="type">boolean</span> <span class="variable">c</span> <span class="operator">=</span> compare(<span class="number">10</span>,<span class="number">11</span>);<span class="comment">//默认int</span></span><br><span class="line">        System.out.println(c);</span><br><span class="line">        </span><br><span class="line">        <span class="type">boolean</span> <span class="variable">d</span> <span class="operator">=</span> compare((<span class="type">long</span>)<span class="number">10</span>,(<span class="type">long</span>)<span class="number">11</span>);<span class="comment">//强制转换</span></span><br><span class="line">        System.out.println(d);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">compare</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span> &#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;int&quot;</span>);</span><br><span class="line">       <span class="keyword">return</span> a==b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">compare</span><span class="params">(<span class="type">long</span> a,<span class="type">long</span> b)</span> &#123;</span><br><span class="line">       System.out.println(<span class="string">&quot;long&quot;</span>);</span><br><span class="line">       <span class="keyword">return</span> a==b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">compare</span><span class="params">(<span class="type">byte</span> a,<span class="type">byte</span> b)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;byte&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> a==b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">compare</span><span class="params">(<span class="type">short</span> a,<span class="type">short</span> b)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;short&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> a==b;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//自动选择符合的类型</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="方法的参数传递"><a href="#方法的参数传递" class="headerlink" title="方法的参数传递"></a>方法的参数传递</h3><p><img src="/../images/JAVASE%E5%9F%BA%E7%A1%8004/image-20230630210756806.png" alt="image-20230630210756806"></p>
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -308,12 +326,12 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
-			<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00" rel="prev">
+			<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8005/" title="JAVASE基础05" rel="prev">
 				&laquo;上一篇
 			</a>
 		
 		
-			<a href="/2023/06/26/2023%E9%A1%B9%E7%9B%AE%E7%BB%84%E6%8B%9B%E6%96%B0/" title="2023项目组招新" rel="next">
+			<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8003/" title="JAVASE基础03" rel="next">
 				下一篇&raquo;
 			</a>
 			
@@ -331,52 +349,6 @@
 <div class="relate-post">
 	
 		<ul>
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8005/" title="JAVASE基础05">
-								JAVASE基础05			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 30日, 2023				
-							</p>
-							<p class="relate-post-content">
-								
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8005/" title="JAVASE基础05">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础05"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8004/" title="JAVASE基础04">
-								JAVASE基础04			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 30日, 2023				
-							</p>
-							<p class="relate-post-content">
-								方法概念方法(method)是将具有独立功能的代码块组织成为一个整体，使其具有特殊功能的代码集
-注意:方法必须先创建才可以使用，该过程称为方法定义方法创建后并不是直接运行的，需要手动使用后才执行，该过程称为方法调用
-方法的定义和调用一...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8004/" title="JAVASE基础04">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础04"/>
-							</a>
-						</div>
-					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -474,6 +446,50 @@
 							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8005/" title="JAVASE基础05">
+								JAVASE基础05			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 30日, 2023				
+							</p>
+							<p class="relate-post-content">
+								
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/30/JAVASE%E5%9F%BA%E7%A1%8005/" title="JAVASE基础05">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础05"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" title="关于lihuibear">
+								关于lihuibear			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 28日, 2023				
+							</p>
+							<p class="relate-post-content">
+								lihuibear
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" title="关于lihuibear">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="关于lihuibear"/>
 							</a>
 						</div>
 					</li>												
