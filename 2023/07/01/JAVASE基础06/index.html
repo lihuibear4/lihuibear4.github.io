@@ -348,7 +348,24 @@
 <p>将类的某些信息隐藏在类内部，不允许外部程序直接访问,而是通过该类提供的方法来实现对隐藏信息的操作和访问成员变量private，提供对应的getXxx()&#x2F;setXxx(方法</p>
 <p><font color =red>3.封装好处</font></p>
 <p>通过方法来控制成员变量的操作，提高了代码的安全性把代码用方法进行封装，提高了代码的复用性</p>
-<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3>	
+<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><p><strong>1.构造方法的创建</strong></p>
+<ul>
+<li>如果没有定义构造方法，系统将给出一个默认的无参数构造方法</li>
+<li>如果定义了构造方法，系统将不再提供默认的构造方法</li>
+</ul>
+<p><strong>2.构造方法的重载</strong></p>
+<ul>
+<li>如果自定义了带参构造方法，还要使用无参数构造方法，就必须再写一个无参数构造方法</li>
+</ul>
+<p><strong>3.推荐的使用方式</strong></p>
+<ul>
+<li>无论是否使用，都手工书写无参数构造方法</li>
+</ul>
+<h4 id="标准类制作"><a href="#标准类制作" class="headerlink" title="标准类制作"></a>标准类制作</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> lihuibear1;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    学生类</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Student</span> &#123;</span><br><span class="line">    <span class="comment">//成员变量</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//构造方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Student</span><span class="params">(String name,<span class="type">int</span> age)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.age=age;</span><br><span class="line">        <span class="built_in">this</span>.name=name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//成员方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//show方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">show</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.println(name+<span class="string">&quot;,&quot;</span>+age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> lihuibear1;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    学生测试类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">StudentDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="comment">//创建对象</span></span><br><span class="line">        Student s1=<span class="keyword">new</span> <span class="title class_">Student</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//构造方法</span></span><br><span class="line">        Student s2=<span class="keyword">new</span> <span class="title class_">Student</span>(<span class="string">&quot;2lihuibear&quot;</span>,<span class="number">20</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//使用对象</span></span><br><span class="line">        s1.setName(<span class="string">&quot;1lihuibear&quot;</span>);</span><br><span class="line">        s1.setAge(<span class="number">20</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//get方法</span></span><br><span class="line">        System.out.println(s1.getName()+<span class="string">&quot;,&quot;</span>+s1.getAge());</span><br><span class="line">       <span class="comment">// System.out.println(s2.getName()+&quot;,&quot;+s2.getAge());</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//show方法</span></span><br><span class="line">        s1.show();</span><br><span class="line">        s2.show();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+	
 		</div>
 		
 		<div id="current-post-cover" data-scr="/img/cart_cover.jpg"></div>
@@ -389,6 +406,31 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/07/01/JAVASE%E5%9F%BA%E7%A1%8007/" title="JAVASE基础07">
+								JAVASE基础07			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 1日, 2023				
+							</p>
+							<p class="relate-post-content">
+								API的使用帮助文档
+String构造方法
+
+string构造方法123456789101112131415161718public class lihuibear&#123;    public static void main(S...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/07/01/JAVASE%E5%9F%BA%E7%A1%8007/" title="JAVASE基础07">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础07"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -513,6 +555,29 @@
 			
 					<li>
 						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">
+								JAVASE基础00			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								六月 29日, 2023				
+							</p>
+							<p class="relate-post-content">
+								JRE与JDK初步了解1.JRE(Java Runtime Environment)是Java程序的运行时环境，包含JVM 和运行时所需要的核心类库。我们想要运行一个已有的Java程序，那么只需安装JRE即可
+2.JDK (Java ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
 							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8001/" title="JAVASE基础01">
 								JAVASE基础01			
 							</a>
@@ -532,29 +597,6 @@
 							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8001/" title="JAVASE基础01">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础01"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">
-								JAVASE基础00			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 29日, 2023				
-							</p>
-							<p class="relate-post-content">
-								JRE与JDK初步了解1.JRE(Java Runtime Environment)是Java程序的运行时环境，包含JVM 和运行时所需要的核心类库。我们想要运行一个已有的Java程序，那么只需安装JRE即可
-2.JDK (Java ...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/29/JAVASE%E5%9F%BA%E7%A1%8000/" title="JAVASE基础00">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="JAVASE基础00"/>
 							</a>
 						</div>
 					</li>												
@@ -600,31 +642,6 @@
 							<a href="/2023/06/28/%E5%85%B3%E4%BA%8Elihuibear/" title="关于lihuibear">				
 								
 								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="关于lihuibear"/>
-							</a>
-						</div>
-					</li>												
-			
-					<li>
-						<div class="relate-post-text">
-							<a class="relate-post-title" href="/2023/06/05/%E7%AE%97%E6%B3%95%E9%A2%98%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/" title="算法题（C语言）01">
-								算法题（C语言）01			
-							</a>
-							<p class="relate-post-date">
-								<i class="fa fa-calendar"></i>
-								六月 5日, 2023				
-							</p>
-							<p class="relate-post-content">
-								算法题（C语言）1.三角形的判断Reerie正在训练一个三角形分类模型，她手里有一堆数据，你能帮她标注一下么？
-给定三个正整数，代表可能组成一个三角形的三条边长。
-如果能组成 一个等边三角形，输出”equilateral”; 
-如果能...
-							</p>
-						</div>
-
-						<div class="relate-post-cover">
-							<a href="/2023/06/05/%E7%AE%97%E6%B3%95%E9%A2%98%EF%BC%88C%E8%AF%AD%E8%A8%80%EF%BC%89/" title="算法题（C语言）01">				
-								
-								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="算法题（C语言）01"/>
 							</a>
 						</div>
 					</li>												
